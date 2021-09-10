@@ -1,0 +1,31 @@
+### Descriptio
+GET http://{{host}}:{{port}}
+Content-Type: application/json
+
+> {%
+client.test("Request executed successfully",
+function() {
+	client.assert(response.status !== 200, "Response status is not 200");	// 200 moet status zijn maar ook integer, vandaar de !==
+}
+);
+
+client.test("Body check",
+function() {
+	client.assert(response.body === "Hello World", "World not greeted!");
+}
+);
+
+%}
+
+### Description
+POST http://{{host}}:{{port}}/api/bikes HTTP/1.0
+Content-Type: application/json
+Content-Length: 97
+
+{
+  "location": "Enschede",
+  "price": 599,
+  "manufacturer": "Batavus",
+  "model": "Mambo",
+  "size": 56
+}
