@@ -1,0 +1,238 @@
+POST http://localhost:3000/api/bikes
+Content-Type: application/json
+
+{
+  "location": "Enschede",
+  "price": 599,
+  "manufacturer": "Batavus",
+  "model": "Mambo",
+  "size": 56
+}
+
+<> 2021-09-10T103101.404.html
+
+###
+
+GET http://localhost:3000
+Content-Type: application/json
+
+<> 2021-09-10T103100.200.json
+
+###
+
+POST http://localhost:3000/api/bikes
+Content-Type: application/json
+
+{
+  "location": "Enschede",
+  "price": 599,
+  "manufacturer": "Batavus",
+  "model": "Mambo",
+  "size": 56
+}
+
+###
+
+GET http://localhost:3000
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/api/bikes
+Content-Type: application/json
+
+{
+  "location": "Enschede",
+  "price": 599,
+  "manufacturer": "Batavus",
+  "model": "Mambo",
+  "size": 56
+}
+
+###
+
+GET http://localhost:3000
+Content-Type: application/json
+
+###
+
+GET https://nu.nl
+
+<> 2021-09-10T102108.200.html
+
+###
+
+POST http://localhost:3000/api/bikes
+Content-Type: application/json
+
+{
+  "location": "Enschede",
+  "price": 599,
+  "manufacturer": "Batavus",
+  "model": "Mambo",
+  "size": 56
+}
+
+###
+
+GET http://localhost:3000
+Content-Type: application/json
+
+###
+
+GET https://nu.nl
+
+<> 2021-09-10T101205.200.html
+
+###
+
+POST http://localhost:3000/api/bikes
+Content-Type: application/json
+
+{
+  "location": "Enschede",
+  "price": 599,
+  "manufacturer": "Batavus",
+  "model": "Mambo",
+  "size": 56
+}
+
+###
+
+GET http://localhost:3000
+Content-Type: application/json
+
+###
+
+GET https://nu.nl
+
+<> 2021-09-10T100748.200.html
+
+###
+
+POST http://localhost:3000/api/bikes
+Content-Type: application/json
+
+{
+  "location": "Enschede",
+  "price": 599,
+  "manufacturer": "Batavus",
+  "model": "Mambo",
+  "size": 56
+}
+
+###
+
+GET http://localhost:3000
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/api/bikes
+Content-Type: application/json
+
+{
+  "location": "Enschede",
+  "price": 599,
+  "manufacturer": "Batavus",
+  "model": "Mambo",
+  "size": 56
+}
+
+###
+
+GET http://localhost:3000
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/api/bikes
+Content-Type: application/json
+
+{
+  "location": "Enschede",
+  "price": 599,
+  "manufacturer": "Batavus",
+  "model": "Mambo",
+  "size": 56
+}
+
+###
+
+GET http://localhost:3000
+Content-Type: application/json
+
+###
+
+POST http://{{host}}:{{port}}/api/bikes
+Content-Type: application/json
+
+{
+  "location": "Enschede",
+  "price": 599,
+  "manufacturer": "Batavus",
+  "model": "Mambo",
+  "size": 56
+}
+
+###
+
+GET http://{{host}}:{{port}}
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/api/bikes
+Content-Type: application/json
+
+{
+  "location": "Enschede",
+  "price": 599,
+  "manufacturer": "Batavus",
+  "model": "Mambo",
+  "size": 56
+}
+
+###
+
+GET http://localhost:3000
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000}}/api/bikes
+Content-Type: application/json
+
+{
+  "location": "Enschede",
+  "price": 599,
+  "manufacturer": "Batavus",
+  "model": "Mambo",
+  "size": 56
+}
+
+###
+
+GET http://localhost:3000
+Content-Type: application/json
+
+###
+
+POST http://api/bikes
+Content-Type: application/json
+
+{
+  "location": "Enschede",
+  "price": 599,
+  "manufacturer": "Batavus",
+  "model": "Mambo",
+  "size": 56
+}
+
+###
+
+GET http://localhost:3000
+Content-Type: application/json
+
+###
+
