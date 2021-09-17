@@ -1,3 +1,201 @@
+GET http://localhost:3000/Auctions
+Content-Type: application/json
+
+<> 2021-09-10T121929.404.html
+
+###
+
+GET http://localhost:3000/Auctions
+Content-Type: application/json
+
+<> 2021-09-10T121832.404.html
+
+###
+
+GET http://localhost:3000/Auctions
+Content-Type: application/json
+
+<> 2021-09-10T121817.404.html
+
+###
+
+GET http://localhost:3000/Auctions
+Content-Type: application/json
+
+<> 2021-09-10T121739.404.html
+
+###
+
+GET http://localhost:3000/Auctions
+Content-Type: application/json
+
+<> 2021-09-10T121718.404.html
+
+###
+
+GET http://localhost:3000/Auctions
+Content-Type: application/json
+
+<> 2021-09-10T121612.404.html
+
+###
+
+POST http://localhost:3000/Auctions/auctionID/
+Content-Type: application/json
+
+{
+  "username": "Manuel",
+  "price": 599
+}
+
+<> 2021-09-10T120455.404.html
+
+###
+
+GET http://localhost:3000
+Content-Type: application/json
+
+<> 2021-09-10T120454.200.json
+
+###
+
+POST http://{{host}}:{{port}}/Auctions/auctionID/
+Content-Type: application/json
+
+{
+  "username": "Manuel",
+  "price": 599
+}
+
+###
+
+GET http://localhost:3000
+Content-Type: application/json
+
+<> 2021-09-10T120421.200.json
+
+###
+
+POST http://{{host}}:{{port}}/Auctions/auctionID/
+Content-Type: application/json
+
+{
+  "username": "Manuel",
+  "price": 599
+}
+
+###
+
+GET http://{{host}}:{{port}}
+Content-Type: application/json
+
+###
+
+POST http://{{host}}:{{port}}/Auctions/auctionID/
+Content-Type: application/json
+
+{
+  "username": "Manuel",
+  "price": 599
+}
+
+###
+
+GET http://{{host}}:{{port}}
+Content-Type: application/json
+
+###
+
+POST http://{{host}}:{{port}}/Auctions/auctionID/
+Content-Type: application/json
+
+{
+  "username": "Manuel",
+  "price": 599
+}
+
+###
+
+GET http://{{host}}:{{port}}
+Content-Type: application/json
+
+###
+
+POST http://{{host}}:{{port}}/Auctions/auctionID/
+Content-Type: application/json
+
+{
+  "username": "Manuel",
+  "price": 599
+}
+
+###
+
+GET http://{{host}}:{{port}}
+Content-Type: application/json
+
+###
+
+POST http://{{host}}:{{port}}/Auctions/auctionID/
+Content-Type: application/json
+
+{
+  "username": "Manuel",
+  "price": 599
+}
+
+###
+
+GET http://{{host}}:{{port}}
+Content-Type: application/json
+
+###
+
+POST http://{{host}}:{{port}}/Auctions/auctionID/
+Content-Type: application/json
+
+{
+  "username": "Manuel",
+  "price": 599
+}
+
+###
+
+GET http://{{host}}:{{port}}
+Content-Type: application/json
+
+###
+
+POST http://{{host}}:{{port}}/Auctions/auctionID/
+Content-Type: application/json
+
+{
+  "username": "Manuel",
+  "price": 599
+}
+
+###
+
+GET http://{{host}}:{{port}}
+Content-Type: application/json
+
+###
+
+POST http://{{host}}:{{port}}/Auctions/auctionID/
+Content-Type: application/json
+
+{
+  "username": "Manuel",
+  "price": 599
+}
+
+###
+
+GET http://{{host}}:{{port}}
+Content-Type: application/json
+
+###
+
 POST http://localhost:3000/api/bikes
 Content-Type: application/json
 
@@ -210,29 +408,6 @@ Content-Type: application/json
   "model": "Mambo",
   "size": 56
 }
-
-###
-
-GET http://localhost:3000
-Content-Type: application/json
-
-###
-
-POST http://api/bikes
-Content-Type: application/json
-
-{
-  "location": "Enschede",
-  "price": 599,
-  "manufacturer": "Batavus",
-  "model": "Mambo",
-  "size": 56
-}
-
-###
-
-GET http://localhost:3000
-Content-Type: application/json
 
 ###
 

@@ -1,31 +1,12 @@
-### Descriptio
-GET http://{{host}}:{{port}}
+### Ik wil een lijst van de te veilen producten of diensten
+GET http://localhost:3000/Auctions
 Content-Type: application/json
 
 > {%
-client.test("Request executed successfully",
+client.test("Retrieve auction list",
 function() {
-	client.assert(response.status !== 200, "Response status is not 200");	// 200 moet status zijn maar ook integer, vandaar de !==
+	client.assert(response.body.length !==0 , "Auction list is 0");
+
 }
 );
-
-client.test("Body check",
-function() {
-	client.assert(response.body === "Hello World", "World not greeted!");
-}
-);
-
 %}
-
-### Description
-POST http://{{host}}:{{port}}/api/bikes HTTP/1.0
-Content-Type: application/json
-Content-Length: 97
-
-{
-  "location": "Enschede",
-  "price": 599,
-  "manufacturer": "Batavus",
-  "model": "Mambo",
-  "size": 56
-}
