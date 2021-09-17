@@ -1,12 +1,109 @@
-### Ik wil een lijst van de te veilen producten of diensten
-GET http://localhost:3000/Auctions
+### 1. Ik wil een lijst van de te veilen producten of diensten
+GET http://localhost:3000/auctions
 Content-Type: application/json
 
 > {%
 client.test("Retrieve auction list",
 function() {
-	client.assert(response.body.length !==0 , "Auction list is 0");
-
+	client.assert(response.body.length !== 0 , "Auction list is full");
+    client.assert(response.body.length === 0 , "Auction list is empty");
 }
 );
 %}
+
+### 2. Specefieke veiling bekijken
+GET http://localhost:3000/auctions/{id}
+Content-Type: application/json
+
+> {%
+client.test("Show specific auction",
+function() {
+    client.assert(response.body.length !== 0, "Auction displayed");
+}
+);
+%}
+
+### 5. Ik wil een bod kunnen uitbrengen op een veiling
+POST http://localhost:3000/auctions/{id}/bid
+Content-Type: application/json
+
+{
+    "amount": 100
+}
+
+
+
+### 6. Ik wil een uitgebracht bod kunnen verwijderen
+DELETE http://localhost:3000/auctions/{id}/
+
+> {%
+client.test("Delete bid failed",
+function() {
+    const codes = [400, 403, 406]
+    client.assert(codes.includes(response.status) === true, "Delete failed!");
+}
+);
+
+
+client.test("Delete bid success",
+function() {
+    const codes = [400, 403, 406]
+    client.assert(codes.includes(response.status) !== true, "Delete success!");
+}
+);
+
+
+%}
+
+### 8. Als administrator wil ik een veiling kunnen toevoegen
+
+POST http://localhost:3000/auctions/{obj}
+Content-Type: application/json
+
+{
+  "name": "Kar98",
+  "type" : "Sniper",
+  "system" : "Bolt-Action",
+  "material" : "Wood",
+  "price" : "250",
+  "endDate" : "01-01-2022"
+}
+
+### 8. Als administrator wil ik een veiling kunnen verwijderen
+
+DELETE http://localhost:3000/auctions/{id}
+Content-Type: application/json
+
+> {%
+client.test("Delete auction failed",
+function() {
+    const codes = [400, 403, 406]
+    client.assert(codes.includes(response.status) === true, "Delete failed!");
+}
+);
+
+
+client.test("Delete auction success",
+function() {
+    const codes = [400, 403, 406]
+    client.assert(codes.includes(response.status) !== true, "Delete success!");
+}
+);
+
+
+%}
+
+### 8. Als administrator wil ik een veiling kunnen wijzigen
+
+PUT http://localhost:3000/auctions/{id}
+Content-Type: application/json
+
+{
+  "token" : "Token123456",
+  "name": "Kar98",
+  "type" : "Sniper",
+  "system" : "Bolt-Action",
+  "material" : "Wood",
+  "price" : "250",
+  "endDate" : "01-01-2022"
+}

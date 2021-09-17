@@ -1,3 +1,53 @@
+DELETE http://localhost:3000/Auctions/auctionID/
+
+<> 2021-09-17T101555.404.html
+
+###
+
+POST http://localhost:3000/Auctions/auctionID/{bidObj}
+Content-Type: application/json
+
+{
+    "amount": 100
+}
+
+###
+
+GET http://localhost:3000/Auctions/{auctionID}
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/Auctions
+Content-Type: application/json
+
+<> 2021-09-17T101552.404.html
+
+###
+
+DELETE http://localhost:3000/Auctions/auctionID/
+
+###
+
+POST http://localhost:3000/Auctions/auctionID/{bidObj}
+Content-Type: application/json
+
+{
+    "amount": 100
+}
+
+###
+
+GET http://localhost:3000/Auctions/{auctionID}
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/Auctions
+Content-Type: application/json
+
+###
+
 GET http://localhost:3000/Auctions
 Content-Type: application/json
 
@@ -327,78 +377,6 @@ Content-Type: application/json
 ###
 
 POST http://localhost:3000/api/bikes
-Content-Type: application/json
-
-{
-  "location": "Enschede",
-  "price": 599,
-  "manufacturer": "Batavus",
-  "model": "Mambo",
-  "size": 56
-}
-
-###
-
-GET http://localhost:3000
-Content-Type: application/json
-
-###
-
-POST http://localhost:3000/api/bikes
-Content-Type: application/json
-
-{
-  "location": "Enschede",
-  "price": 599,
-  "manufacturer": "Batavus",
-  "model": "Mambo",
-  "size": 56
-}
-
-###
-
-GET http://localhost:3000
-Content-Type: application/json
-
-###
-
-POST http://{{host}}:{{port}}/api/bikes
-Content-Type: application/json
-
-{
-  "location": "Enschede",
-  "price": 599,
-  "manufacturer": "Batavus",
-  "model": "Mambo",
-  "size": 56
-}
-
-###
-
-GET http://{{host}}:{{port}}
-Content-Type: application/json
-
-###
-
-POST http://localhost:3000/api/bikes
-Content-Type: application/json
-
-{
-  "location": "Enschede",
-  "price": 599,
-  "manufacturer": "Batavus",
-  "model": "Mambo",
-  "size": 56
-}
-
-###
-
-GET http://localhost:3000
-Content-Type: application/json
-
-###
-
-POST http://localhost:3000}}/api/bikes
 Content-Type: application/json
 
 {
