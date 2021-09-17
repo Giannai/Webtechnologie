@@ -1,4 +1,5 @@
 ### 1. Ik wil een lijst van de te veilen producten of diensten
+
 GET http://localhost:3000/auctions
 Content-Type: application/json
 
@@ -7,11 +8,11 @@ client.test("Retrieve auction list",
 function() {
 	client.assert(response.body.length !== 0 , "Auction list is full");
     client.assert(response.body.length === 0 , "Auction list is empty");
-}
-);
+});
 %}
 
 ### 2. Specefieke veiling bekijken
+
 GET http://localhost:3000/auctions/{id}
 Content-Type: application/json
 
@@ -19,11 +20,35 @@ Content-Type: application/json
 client.test("Show specific auction",
 function() {
     client.assert(response.body.length !== 0, "Auction displayed");
-}
-);
+});
 %}
 
+### 3.	In de lijst met veilingen wil ik kunnen zoeken
+
+GET http://localhost:3000/auctions/?name=Sniper
+Content-Type: application/json
+
+> {%
+ client.test("List of Actions with specification 'Sniper'", function () {
+     client.assert(response.status === 201, "Status response is 201");
+     client.assert(response.body.length === 1, "there are Auctions.");
+ });
+ %}
+
+### 4.	In de lijst met veilingen wil ik op drie typen attributen kunnen filteren
+
+GET http://localhost:3000/auctions/?attribute=GBB
+Content-Type: application/json
+
+> {%
+ client.test("list of Auctions with Attribute GBB", function () {
+     client.assert(response.status === 201, "Status response is 201");
+     client.assert(response.body.length === 1, "there are Auctions with Attribute GBB.")
+ });
+ %}
+
 ### 5. Ik wil een bod kunnen uitbrengen op een veiling
+
 POST http://localhost:3000/auctions/{id}/bid
 Content-Type: application/json
 
@@ -31,9 +56,8 @@ Content-Type: application/json
     "amount": 100
 }
 
-
-
 ### 6. Ik wil een uitgebracht bod kunnen verwijderen
+
 DELETE http://localhost:3000/auctions/{id}/
 
 > {%
@@ -41,19 +65,25 @@ client.test("Delete bid failed",
 function() {
     const codes = [400, 403, 406]
     client.assert(codes.includes(response.status) === true, "Delete failed!");
-}
-);
-
-
+});
 client.test("Delete bid success",
 function() {
     const codes = [400, 403, 406]
     client.assert(codes.includes(response.status) !== true, "Delete success!");
-}
-);
-
-
+});
 %}
+
+### 7.	Ik wil een lijst kunnen zien met mijn gewonnen veilingen
+
+GET http://localhost:3000/auctions/?wonActions=true
+Content-Type: application/json
+
+> {%
+ client.test("List of auctions won.", function () {
+     client.assert(response.status === 201, "Status respons is 201");
+     client.assert(response.body.lenght === 1, "ther is a list of won auctions.");
+ });
+ %}
 
 ### 8. Als administrator wil ik een veiling kunnen toevoegen
 
@@ -79,18 +109,12 @@ client.test("Delete auction failed",
 function() {
     const codes = [400, 403, 406]
     client.assert(codes.includes(response.status) === true, "Delete failed!");
-}
-);
-
-
+});
 client.test("Delete auction success",
 function() {
     const codes = [400, 403, 406]
     client.assert(codes.includes(response.status) !== true, "Delete success!");
-}
-);
-
-
+});
 %}
 
 ### 8. Als administrator wil ik een veiling kunnen wijzigen
@@ -106,4 +130,14 @@ Content-Type: application/json
   "material" : "Wood",
   "price" : "250",
   "endDate" : "01-01-2022"
+}
+
+### 9. Als gebruiker wil ik kunnen registreren (emailadres en wachtwoord)
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "Email": "Hank@mail.com",
+  "Password": "HalloHenk"
 }
