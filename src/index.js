@@ -1,24 +1,19 @@
 const express = require('express');
 const app = express();
-const port = 4444;
+const port = 3000;
 
-//app.use(express.json());
+app.use(express.json());
 
-let data = require('../data/data')
+// //Middleware
+// app.use(require('./middleware/log-time'));
+app.use(require('./middleware/is-logged-in'))
 
-app.get('/', (req,res) => {
-    console.log("test")
-    res.send(data)
-})
+// Routers
+app.use('/users', require('./routes/users'));
+app.use('/credentials', require('./routes/credentials'))
 
-app.listen(port);
 
-//Voorbeelden
-app.post('/join', function(request, responde){
-    response.send('got it!')
-    response.end();
-});
 
-app.get('/articles/:name', function(request, responde){
-    response.end('rendering ' + request.params.name)
+app.listen(port, ()=>{
+    console.log(`User server is running on port ${port}!`);
 });
