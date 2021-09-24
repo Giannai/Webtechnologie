@@ -1,11 +1,11 @@
 // pistolen
-[
+module.exports = [
     {
         "id" : 1,
         "name" : "AAP-01 ASSASSIN | BLACK | GBB | ACTION ARMY",
         "type" : "GBB",
         "system" : "Groen Gas",
-        "materail" : "Polymeer",
+        "material" : "Polymeer",
         "price" : 100,
         "biddings" : 1,
         "end_date" :"",
@@ -15,7 +15,7 @@
         "name" : "DESERT EAGLE DE .50 SILVER METAL VERSION | CO2 | KWC",
         "type" : "CO2",
         "system" : "CO2",
-        "materail" : "Full Metal",
+        "material" : "Full Metal",
         "price" : 100,
         "biddings" : 1,
         "end_date" : "",
@@ -29,11 +29,7 @@
         "price" : 100,
         "biddings" : 1,
         "end_date" : "",
-    }
-]
-
-// geweren
-[
+    },
     {
         "id" : 4,
         "name" : "LT-29 ENFORCER NEEDLETAIL BLACK | AEG | LANCER TACTICAL",
@@ -63,11 +59,7 @@
         "price" : 100,
         "biddings" : 1,
         "end_date" : "",
-    }
-]
-
-// SMG
-[
+    },
     {
         "id" : 7,
         "name" : "ARP9 | AEG | G&G",
@@ -97,11 +89,7 @@
         "price" : 100,
         "biddings" : 1,
         "end_date" : "",
-    }
-]
-
-// Sniper
-[
+    },
     {
         "id" : 10,
         "name" : "L96 SNIPER RIFLE SET | BLACK | WELL",

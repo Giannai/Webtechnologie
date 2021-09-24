@@ -4,15 +4,17 @@ const port = 3000;
 
 app.use(express.json());
 
+// Routers
+app.use('/users', require('./routes/users'));
 app.use('/credentials', require('./routes/credentials'))
 
 
-// //Middleware
+// Middleware
 // app.use(require('./middleware/log-time'));
-app.use(require('./middleware/is-logged-in'))
+// app.use(require('./middleware/is-logged-in'));
+// app.use(require('./middleware/is-admin'));
 
-// Routers
-app.use('/users', require('./routes/users'));
+
 
 
 
