@@ -1,0 +1,17 @@
+POST http://localhost:3000/credentials
+Content-Type: application/json
+
+{
+  "username": "John",
+  "password": "0000"
+}
+
+> {%
+client.global.set("token", response.body.token)
+%}
+
+###
+GET http://localhost:3000/users
+Content-Type: application/json
+Authorization: Bearer {{token}}
+

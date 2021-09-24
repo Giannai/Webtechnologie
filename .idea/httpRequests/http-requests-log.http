@@ -1,3 +1,159 @@
+GET http://localhost:3000/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvaG4iLCJyb2xlcyI6WyJhZG1pbiIsInVzZXIiXSwiaWF0IjoxNjMyNDcwOTYyfQ.CMu9DlrCNnvgODbfzRA1-ue2UKns9u9Ppm5PTZmYvb4
+
+<> 2021-09-24T100923.200.html
+
+###
+
+POST http://localhost:3000/credentials
+Content-Type: application/json
+
+{
+  "username": "John",
+  "password": "0000"
+}
+
+<> 2021-09-24T100923.201.json
+
+###
+
+GET http://localhost:3000/users
+Content-Type: application/json
+Authorization: Bearer undefined
+
+<> 2021-09-24T100308.401.html
+
+###
+
+POST http://localhost:3000/credentials
+Content-Type: application/json
+
+{
+  "username": "John",
+  "password": "0000"
+}
+
+<> 2021-09-24T100307.500.html
+
+###
+
+GET http://localhost:3000/users
+Content-Type: application/json
+Authorization: Bearer undefined
+
+<> 2021-09-24T100214.401.html
+
+###
+
+POST http://localhost:3000/credentials
+Content-Type: application/json
+
+{
+  "username": "John",
+  "password": "0000"
+}
+
+<> 2021-09-24T100213.500.html
+
+###
+
+GET http://localhost:3000/users
+Content-Type: application/json
+Authorization: Bearer undefined
+
+<> 2021-09-24T100131.401.html
+
+###
+
+POST http://localhost:3000/credentials
+Content-Type: application/json
+
+{
+  "username": "John",
+  "password": "0000"
+}
+
+<> 2021-09-24T100130.500.html
+
+###
+
+GET http://localhost:3000/users
+Content-Type: application/json
+Authorization: Bearer undefined
+
+<> 2021-09-24T095657.401.html
+
+###
+
+POST http://localhost:3000/credentials
+Content-Type: application/json
+
+{
+  "username": "John",
+  "password": "0000"
+}
+
+<> 2021-09-24T095656.500.html
+
+###
+
+GET http://localhost:3000/users
+Content-Type: application/json
+Authorization: Bearer undefined
+
+###
+
+POST http://localhost:3000/credentials
+Content-Type: application/json
+
+{
+  "username": "John",
+  "password": "0000"
+}
+
+###
+
+GET http://localhost:3000/users
+Content-Type: application/json
+Authorization: Bearer undefined
+
+<> 2021-09-24T095455.401.html
+
+###
+
+POST http://localhost:3000/credentials
+Content-Type: application/json
+
+{
+  "username": "John",
+  "password": "0000"
+}
+
+<> 2021-09-24T095454.401.html
+
+###
+
+GET http://localhost:3000/users
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+<> 2021-09-24T095407.401.html
+
+###
+
+POST http://localhost:3000/credentials
+Content-Type: application/json
+
+{
+  "username": "John",
+  "password": "0000"
+}
+
+<> 2021-09-24T095404.401.html
+
+###
+
 DELETE http://localhost:3000/Auctions/auctionID/
 
 <> 2021-09-17T101555.404.html
@@ -243,149 +399,6 @@ Content-Type: application/json
 
 GET http://{{host}}:{{port}}
 Content-Type: application/json
-
-###
-
-POST http://localhost:3000/api/bikes
-Content-Type: application/json
-
-{
-  "location": "Enschede",
-  "price": 599,
-  "manufacturer": "Batavus",
-  "model": "Mambo",
-  "size": 56
-}
-
-<> 2021-09-10T103101.404.html
-
-###
-
-GET http://localhost:3000
-Content-Type: application/json
-
-<> 2021-09-10T103100.200.json
-
-###
-
-POST http://localhost:3000/api/bikes
-Content-Type: application/json
-
-{
-  "location": "Enschede",
-  "price": 599,
-  "manufacturer": "Batavus",
-  "model": "Mambo",
-  "size": 56
-}
-
-###
-
-GET http://localhost:3000
-Content-Type: application/json
-
-###
-
-POST http://localhost:3000/api/bikes
-Content-Type: application/json
-
-{
-  "location": "Enschede",
-  "price": 599,
-  "manufacturer": "Batavus",
-  "model": "Mambo",
-  "size": 56
-}
-
-###
-
-GET http://localhost:3000
-Content-Type: application/json
-
-###
-
-GET https://nu.nl
-
-<> 2021-09-10T102108.200.html
-
-###
-
-POST http://localhost:3000/api/bikes
-Content-Type: application/json
-
-{
-  "location": "Enschede",
-  "price": 599,
-  "manufacturer": "Batavus",
-  "model": "Mambo",
-  "size": 56
-}
-
-###
-
-GET http://localhost:3000
-Content-Type: application/json
-
-###
-
-GET https://nu.nl
-
-<> 2021-09-10T101205.200.html
-
-###
-
-POST http://localhost:3000/api/bikes
-Content-Type: application/json
-
-{
-  "location": "Enschede",
-  "price": 599,
-  "manufacturer": "Batavus",
-  "model": "Mambo",
-  "size": 56
-}
-
-###
-
-GET http://localhost:3000
-Content-Type: application/json
-
-###
-
-GET https://nu.nl
-
-<> 2021-09-10T100748.200.html
-
-###
-
-POST http://localhost:3000/api/bikes
-Content-Type: application/json
-
-{
-  "location": "Enschede",
-  "price": 599,
-  "manufacturer": "Batavus",
-  "model": "Mambo",
-  "size": 56
-}
-
-###
-
-GET http://localhost:3000
-Content-Type: application/json
-
-###
-
-POST http://localhost:3000/api/bikes
-Content-Type: application/json
-
-{
-  "location": "Enschede",
-  "price": 599,
-  "manufacturer": "Batavus",
-  "model": "Mambo",
-  "size": 56
-}
 
 ###
 

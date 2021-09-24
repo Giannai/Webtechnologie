@@ -21,18 +21,18 @@ router.post('', (req,res)=> {
 });
 
 const login = (username, password) => {
-    const _user = users.find((user) => {
-        return _user.username === user;
+    const user = users.find((user) => {
+        return user.username === username;
     });
 
-    if (_user && _user.password) {
-        const result = bcrypt.compareSync(password, _user.password);
+    if (user && user.password) {
+        const result = bcrypt.compareSync(password, user.password);
         if (result) {
         }
         return jwt.sign({
-            username: _user.username,
-            roles: _user.roles,
-        }, _user.secret)
+            username: user.username,
+            roles: user.roles,
+        }, user.secret)
     }
     return false;
 };
