@@ -13,7 +13,7 @@ function() {
 
 ### 2. Specefieke veiling bekijken
 
-GET http://localhost:3000/auctions/{id}
+POST http://localhost:3000/auctions/1
 Content-Type: application/json
 
 > {%
@@ -25,7 +25,7 @@ function() {
 
 ### 3.	In de lijst met veilingen wil ik kunnen zoeken
 
-GET http://localhost:3000/auctions/?name=Sniper
+GET http://localhost:3000/auctions?name=Desert
 Content-Type: application/json
 
 > {%

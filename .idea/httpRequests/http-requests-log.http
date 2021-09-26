@@ -1,3 +1,137 @@
+GET http://localhost:3000/auctions?name=Desert
+Content-Type: application/json
+
+<> 2021-09-26T202802.200.json
+
+###
+
+GET http://localhost:3000/auctions
+Content-Type: application/json
+
+<> 2021-09-26T201952.200.json
+
+###
+
+POST http://localhost:3000/auctions/1
+Content-Type: application/json
+
+<> 2021-09-26T201948.200.json
+
+###
+
+POST http://localhost:3000/auctions/1
+Content-Type: application/json
+
+<> 2021-09-26T201946.200.json
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "Email": "Hank@mail.com",
+  "Password": "HalloHenk"
+}
+
+<> 2021-09-26T201858.201.html
+
+###
+
+PUT http://localhost:3000/auctions/{id}
+Content-Type: application/json
+
+{
+  "token" : "Token123456",
+  "name": "Kar98",
+  "type" : "Sniper",
+  "system" : "Bolt-Action",
+  "material" : "Wood",
+  "price" : "250",
+  "endDate" : "01-01-2022"
+}
+
+###
+
+DELETE http://localhost:3000/auctions/{id}
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/auctions/{obj}
+Content-Type: application/json
+
+{
+  "name": "Kar98",
+  "type" : "Sniper",
+  "system" : "Bolt-Action",
+  "material" : "Wood",
+  "price" : "250",
+  "endDate" : "01-01-2022"
+}
+
+###
+
+GET http://localhost:3000/auctions/?wonActions=true
+Content-Type: application/json
+
+<> 2021-09-26T201858.200.json
+
+###
+
+DELETE http://localhost:3000/auctions/{id}/bid/{idB}
+
+###
+
+POST http://localhost:3000/auctions/{id}/bid
+Content-Type: application/json
+
+{
+    "amount": 100
+}
+
+###
+
+GET http://localhost:3000/auctions/?attribute=GBB
+Content-Type: application/json
+
+<> 2021-09-26T201857-2.200.json
+
+###
+
+GET http://localhost:3000/auctions/?name=Sniper
+Content-Type: application/json
+
+<> 2021-09-26T201857-1.200.json
+
+###
+
+GET http://localhost:3000/auctions/1
+Content-Type: application/json
+
+<> 2021-09-26T201857.404.html
+
+###
+
+GET http://localhost:3000/auctions
+Content-Type: application/json
+
+<> 2021-09-26T201857.200.json
+
+###
+
+GET http://localhost:3000/auctions/1
+Content-Type: application/json
+
+<> 2021-09-26T201845.404.html
+
+###
+
+GET http://localhost:3000/auctions/{id}
+Content-Type: application/json
+
+###
+
 GET http://localhost:3000/users
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvaG4iLCJyb2xlcyI6WyJhZG1pbiIsInVzZXIiXSwiaWF0IjoxNjMyNjU0NTczfQ._7SBi_sK3Hdcq_2-8cQkBLLc6eh8oxskkjYL--_okzQ
@@ -276,139 +410,6 @@ GET http://localhost:3000/Auctions
 Content-Type: application/json
 
 <> 2021-09-10T121718.404.html
-
-###
-
-GET http://localhost:3000/Auctions
-Content-Type: application/json
-
-<> 2021-09-10T121612.404.html
-
-###
-
-POST http://localhost:3000/Auctions/auctionID/
-Content-Type: application/json
-
-{
-  "username": "Manuel",
-  "price": 599
-}
-
-<> 2021-09-10T120455.404.html
-
-###
-
-GET http://localhost:3000
-Content-Type: application/json
-
-<> 2021-09-10T120454.200.json
-
-###
-
-POST http://{{host}}:{{port}}/Auctions/auctionID/
-Content-Type: application/json
-
-{
-  "username": "Manuel",
-  "price": 599
-}
-
-###
-
-GET http://localhost:3000
-Content-Type: application/json
-
-<> 2021-09-10T120421.200.json
-
-###
-
-POST http://{{host}}:{{port}}/Auctions/auctionID/
-Content-Type: application/json
-
-{
-  "username": "Manuel",
-  "price": 599
-}
-
-###
-
-GET http://{{host}}:{{port}}
-Content-Type: application/json
-
-###
-
-POST http://{{host}}:{{port}}/Auctions/auctionID/
-Content-Type: application/json
-
-{
-  "username": "Manuel",
-  "price": 599
-}
-
-###
-
-GET http://{{host}}:{{port}}
-Content-Type: application/json
-
-###
-
-POST http://{{host}}:{{port}}/Auctions/auctionID/
-Content-Type: application/json
-
-{
-  "username": "Manuel",
-  "price": 599
-}
-
-###
-
-GET http://{{host}}:{{port}}
-Content-Type: application/json
-
-###
-
-POST http://{{host}}:{{port}}/Auctions/auctionID/
-Content-Type: application/json
-
-{
-  "username": "Manuel",
-  "price": 599
-}
-
-###
-
-GET http://{{host}}:{{port}}
-Content-Type: application/json
-
-###
-
-POST http://{{host}}:{{port}}/Auctions/auctionID/
-Content-Type: application/json
-
-{
-  "username": "Manuel",
-  "price": 599
-}
-
-###
-
-GET http://{{host}}:{{port}}
-Content-Type: application/json
-
-###
-
-POST http://{{host}}:{{port}}/Auctions/auctionID/
-Content-Type: application/json
-
-{
-  "username": "Manuel",
-  "price": 599
-}
-
-###
-
-GET http://{{host}}:{{port}}
-Content-Type: application/json
 
 ###
 

@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e2938d5-2418-4e57-bd3c-3e7bc46fae69" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/replicas.js" afterDir="false" />
+    <list default="true" id="4e2938d5-2418-4e57-bd3c-3e7bc46fae69" name="Changes" comment="replica callbacks added">
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/users_backup.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/replicas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test.rest" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.rest" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,28 +70,34 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.All in token">
+  <component name="RunManager" selected="Node.js.auctions.js">
     <configuration name="All in test" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/tests/test.rest">
       <method v="2" />
     </configuration>
     <configuration name="All in token" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/tests/token.rest">
       <method v="2" />
     </configuration>
-    <configuration name="users.js" type="NodeJSConfigurationType" path-to-js-file="user.js" working-dir="$PROJECT_DIR$/src/routes">
+    <configuration name="test#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/tests/test.rest" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
+    <configuration name="test#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/tests/test.rest" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/tests/test.rest" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="auctions.js" type="NodeJSConfigurationType" path-to-js-file="auctions.js" working-dir="$PROJECT_DIR$/src/routes">
+      <method v="2" />
+    </configuration>
+    <configuration name="users.js" type="NodeJSConfigurationType" path-to-js-file="user.js" working-dir="$PROJECT_DIR$/src/routes">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.test#3" />
+        <item itemvalue="HTTP Request.test#1" />
+        <item itemvalue="HTTP Request.test#2" />
+        <item itemvalue="HTTP Request.All in test" />
         <item itemvalue="HTTP Request.All in token" />
       </list>
     </recent_temporary>
@@ -124,7 +127,10 @@
       <workItem from="1632299849178" duration="9182000" />
       <workItem from="1632328371670" duration="1207000" />
       <workItem from="1632650768701" duration="95000" />
-      <workItem from="1632650888773" duration="7563000" />
+      <workItem from="1632650888773" duration="7725000" />
+      <workItem from="1632670959157" duration="1026000" />
+      <workItem from="1632672920833" duration="2000" />
+      <workItem from="1632679659590" duration="4195000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1631264616254</created>
@@ -175,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632218533683</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="replica callbacks added">
+      <created>1632664114633</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1632664114633</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +210,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="replica callbacks added" />
+    <option name="LAST_COMMIT_MESSAGE" value="replica callbacks added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
