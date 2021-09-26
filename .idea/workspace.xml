@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e2938d5-2418-4e57-bd3c-3e7bc46fae69" name="Changes" comment="replica callbacks added">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+    <list default="true" id="4e2938d5-2418-4e57-bd3c-3e7bc46fae69" name="Changes" comment="Auction api calls added&#10;&#10;Fix needed for: remove conflict between return auction list and search by parameter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/replicas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auctions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test.rest" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.rest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/auctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auctions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +60,7 @@
     <property name="javascript.nodejs.core.library.typings.version" value="14.17.6" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -130,7 +127,7 @@
       <workItem from="1632650888773" duration="7725000" />
       <workItem from="1632670959157" duration="1026000" />
       <workItem from="1632672920833" duration="2000" />
-      <workItem from="1632679659590" duration="4195000" />
+      <workItem from="1632679659590" duration="5331000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1631264616254</created>
@@ -188,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632664114633</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Auction api calls added&#10;&#10;Fix needed for: remove conflict between return auction list and search by parameter">
+      <created>1632683958991</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1632683958991</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +215,8 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Update" />
     <MESSAGE value="replica callbacks added" />
-    <option name="LAST_COMMIT_MESSAGE" value="replica callbacks added" />
+    <MESSAGE value="Auction api calls added&#10;&#10;Fix needed for: remove conflict between return auction list and search by parameter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Auction api calls added&#10;&#10;Fix needed for: remove conflict between return auction list and search by parameter" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
