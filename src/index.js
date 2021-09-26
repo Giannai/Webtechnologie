@@ -6,7 +6,9 @@ app.use(express.json());
 
 // Routers
 app.use('/users', require('./routes/users'));
-app.use('/credentials', require('./routes/credentials'))
+app.use('/credentials', require('./routes/credentials'));
+app.use('/replicas', require('./routes/replicas'));
+
 
 
 // Middleware

@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e2938d5-2418-4e57-bd3c-3e7bc46fae69" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Webtechnologie.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documents/password-encryption.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/is-logged-in.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/log-time.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/credentials.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/replicas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/users_backup.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +43,10 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/tests/test.rest" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/routes/users.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/routes/users.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/tests/test.rest" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1xwGY3Ev2flrD2aWT2p6JQvcZEs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -63,12 +57,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="12.22.5" />
-    <property name="javascript.nodejs.core.library.typings.version" value="12.20.25" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.17.6" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.17.6" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
@@ -78,8 +73,11 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.users.js">
+  <component name="RunManager" selected="HTTP Request.All in token">
     <configuration name="All in test" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/tests/test.rest">
+      <method v="2" />
+    </configuration>
+    <configuration name="All in token" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/tests/token.rest">
       <method v="2" />
     </configuration>
     <configuration name="users.js" type="NodeJSConfigurationType" path-to-js-file="user.js" working-dir="$PROJECT_DIR$/src/routes">
@@ -97,8 +95,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
-        <item itemvalue="HTTP Request.All in test" />
+        <item itemvalue="HTTP Request.All in token" />
       </list>
     </recent_temporary>
   </component>
@@ -126,6 +123,8 @@
       <workItem from="1632296632429" duration="3012000" />
       <workItem from="1632299849178" duration="9182000" />
       <workItem from="1632328371670" duration="1207000" />
+      <workItem from="1632650768701" duration="95000" />
+      <workItem from="1632650888773" duration="7563000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1631264616254</created>
@@ -195,6 +194,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Update" />
     <option name="LAST_COMMIT_MESSAGE" value="Update" />
