@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e2938d5-2418-4e57-bd3c-3e7bc46fae69" name="Changes" comment="Auction api calls added&#10;&#10;Fix needed for: remove conflict between return auction list and search by parameter">
+    <list default="true" id="4e2938d5-2418-4e57-bd3c-3e7bc46fae69" name="Changes" comment="Auction api calls updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/replicas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/replicas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/auctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auctions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +128,8 @@
       <workItem from="1632650888773" duration="7725000" />
       <workItem from="1632670959157" duration="1026000" />
       <workItem from="1632672920833" duration="2000" />
-      <workItem from="1632679659590" duration="5331000" />
+      <workItem from="1632679659590" duration="5440000" />
+      <workItem from="1632742424308" duration="7464000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1631264616254</created>
@@ -192,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632683958991</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Auction api calls updated">
+      <created>1632685111782</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1632685111782</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +225,8 @@
     <MESSAGE value="Update" />
     <MESSAGE value="replica callbacks added" />
     <MESSAGE value="Auction api calls added&#10;&#10;Fix needed for: remove conflict between return auction list and search by parameter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Auction api calls added&#10;&#10;Fix needed for: remove conflict between return auction list and search by parameter" />
+    <MESSAGE value="Auction api calls updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Auction api calls updated" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
