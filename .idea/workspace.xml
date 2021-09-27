@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e2938d5-2418-4e57-bd3c-3e7bc46fae69" name="Changes" comment="Auction api calls updated">
+    <list default="true" id="4e2938d5-2418-4e57-bd3c-3e7bc46fae69" name="Changes" comment="Auction api calls added filter with 3 attributes">
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/replicas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/replicas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/auctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test.rest" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.rest" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,9 +74,6 @@
     <configuration name="All in test" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/tests/test.rest">
       <method v="2" />
     </configuration>
-    <configuration name="All in token" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/tests/token.rest">
-      <method v="2" />
-    </configuration>
     <configuration name="test#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/tests/test.rest" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -82,6 +81,9 @@
       <method v="2" />
     </configuration>
     <configuration name="test#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/tests/test.rest" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/tests/test.rest" index="5" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="auctions.js" type="NodeJSConfigurationType" path-to-js-file="auctions.js" working-dir="$PROJECT_DIR$/src/routes">
@@ -92,11 +94,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.test#5" />
         <item itemvalue="HTTP Request.test#3" />
         <item itemvalue="HTTP Request.test#1" />
         <item itemvalue="HTTP Request.test#2" />
         <item itemvalue="HTTP Request.All in test" />
-        <item itemvalue="HTTP Request.All in token" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +131,7 @@
       <workItem from="1632670959157" duration="1026000" />
       <workItem from="1632672920833" duration="2000" />
       <workItem from="1632679659590" duration="5440000" />
-      <workItem from="1632742424308" duration="7464000" />
+      <workItem from="1632742424308" duration="17512000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1631264616254</created>
@@ -201,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632685111782</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Auction api calls added filter with 3 attributes">
+      <created>1632749988817</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1632749988817</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +235,8 @@
     <MESSAGE value="replica callbacks added" />
     <MESSAGE value="Auction api calls added&#10;&#10;Fix needed for: remove conflict between return auction list and search by parameter" />
     <MESSAGE value="Auction api calls updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Auction api calls updated" />
+    <MESSAGE value="Auction api calls added filter with 3 attributes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Auction api calls added filter with 3 attributes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -5,7 +5,7 @@ const isAdmin = require('../middleware/is-admin')
 const auctions = require('../data/replicas')
 const router = express.Router();
 
-// // Return auction list (auctions)
+// Return auction list (auctions)
 router.get('', (req,res)=> {
 
     // Create empty list for the usernames
@@ -21,19 +21,22 @@ router.get('', (req,res)=> {
     res.status(listReplicas ? StatusCodes.OK : StatusCodes.NOTFOUND).send(listReplicas ? listReplicas : 'Not found.');
 })
 
+
 // Return single auction
 router.post('/:id', (req,res)=> {
-
     let exists = false;
+
     for (const replica of auctions) {
-        if (replica.id == req.params.id) {
+        if (replica.id === parseInt(req.params.id)) {
             exists = true;
             res
                 .status(StatusCodes.OK)
                 .send(replica);
         }
     }
-    res.status(!exists && StatusCodes.NOT_FOUND).send(!exists && 'Resource not found!');
+    if (!exists) {
+        res.status(StatusCodes.NOT_FOUND).send('Resource not found!');
+    }
 })
 
 
@@ -46,7 +49,6 @@ router.get('/search', (req,res)=> {
         const str = replica.name;
 
         if (str.toLowerCase().includes(filter.toLowerCase())) {
-            console.log(replica);
             filteredList.push(replica);
         }
     }
@@ -58,27 +60,16 @@ router.get('/search', (req,res)=> {
 // Filter the auction list with 3 different types of attributes
 router.get('/filter', (req,res)=> {
 
-    // Filter by attributes
-    // type
-    // system
-    // material
-
     const attribs = [];
 
     for (let key in req.query)
         if (key != null)
             attribs.push(key);
 
-    console.log('attributes: ' + attribs); // Print list of attributes used in query, it is possible to select 1 to 3
-
     const values = [];
     for (let i = 0; attribs.length > i; i += 1){
         values.push(req.query[attribs[i]]);
     }
-
-
-    console.log('values: ' + values); // Print all query parameters
-
 
     // Filter all used parameters
     const result = auctions.filter(function(e) {
@@ -86,14 +77,57 @@ router.get('/filter', (req,res)=> {
             return values.includes(e[a.toLowerCase()]);
         })
     })
-    console.log(result);
 
     res.status( result ? StatusCodes.OK : StatusCodes.BAD_REQUEST).send(result ? result : "Yup, this didn't work as expected, I’m probably not the best person to ask for that information.")
 })
 
 
+// Retrieve all bids for single auction
+router.get('/:id/bids', (req,res)=> {
+    let bids = [];
+    for (const replica of auctions) {
+        if (replica.id === parseInt(req.params.id)) {
+            for (const key in replica) {
+                if (key === 'bids') {
+                    for (let i = 0; i < replica[key].length; i++) {
+                        bids.push(replica[key][i]);
+                    }
+                }
+            }
+        }
+    }
 
+    res.status(bids ? StatusCodes.OK : StatusCodes.NOT_FOUND).send(bids.length !== 0 ? bids : 'There are no bids for this auction.');
+})
 
+// Make bid
+router.post('/:id/bids', (req,res)=>{
+
+    const id = parseInt(req.params.id);
+    const {user, bid} = req.body;
+    let exists = false;
+    for (const replica of auctions) {
+        if (replica.id === id) {
+            for (const key in replica) {
+                if (key === 'bids') {
+                    for (let i = 0; i < replica[key].length; i++){
+                        // If bid exists do set exist to true
+                        if (replica[key][i].user === user && replica[key][i].bid === bid)
+                            exists = true;
+                    }
+                }
+            }
+
+            if (!exists) {
+                auctions[id-1].bids.push(req.body);
+                res.status(StatusCodes.OK).send(auctions[id-1]);
+            }
+            else{
+                res.status(StatusCodes.NOT_ACCEPTABLE).send("You're so poor that I envy the people who haven't met you");
+            }
+        }
+    }
+})
 
 
 module.exports = router;

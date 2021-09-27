@@ -49,11 +49,12 @@ Content-Type: application/json
 
 ### 5. Ik wil een bod kunnen uitbrengen op een veiling
 
-POST http://localhost:3000/auctions/{id}/bid
+POST http://localhost:3000/auctions/1/bids
 Content-Type: application/json
 
 {
-    "amount": 100
+  "user" : "John",
+    "bid": 1000
 }
 
 ### 6. Ik wil een uitgebracht bod kunnen verwijderen

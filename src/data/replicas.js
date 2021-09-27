@@ -6,9 +6,14 @@ module.exports = [
         "type" : "GBB",
         "system" : "Groen Gas",
         "material" : "Polymeer",
-        "price" : 100,
-        "bids" : 1,
-        "end_date" :"",
+        "price" : 180,
+        "bids":[
+            {"user": "John",
+                "bid": 100},
+            {"user": "Bob",
+                "bid": 150}
+        ],
+        "end_date" :""
     },
     {
         "id" : 2,
@@ -18,7 +23,7 @@ module.exports = [
         "material" : "Full Metal",
         "price" : 100,
         "bids" : 1,
-        "end_date" : "",
+        "end_date" : ""
     },
     {
         "id" : 3,
@@ -28,7 +33,7 @@ module.exports = [
         "material" : "Polymeer / Metaal",
         "price" : 100,
         "bids" : 1,
-        "end_date" : "",
+        "end_date" : ""
     },
     {
         "id" : 4,
@@ -38,7 +43,7 @@ module.exports = [
         "material" : "Polymeer / Metaal",
         "price" : 100,
         "bids" : 1,
-        "end_date" : "",
+        "end_date" : ""
     },
     {
         "id" : 5,
@@ -48,7 +53,7 @@ module.exports = [
         "material" : "Full Metal",
         "price" : 100,
         "bids" : 1,
-        "end_date" : "",
+        "end_date" : ""
     },
     {
         "id" : 6,
@@ -58,7 +63,7 @@ module.exports = [
         "material" : "Full Metal",
         "price" : 100,
         "bids" : 1,
-        "end_date" : "",
+        "end_date" : ""
     },
     {
         "id" : 7,
@@ -68,7 +73,7 @@ module.exports = [
         "material" : "Polymeer / Metaal",
         "price" : 100,
         "bids" : 1,
-        "end_date" : "",
+        "end_date" : ""
     },
     {
         "id" : 8,
@@ -78,7 +83,7 @@ module.exports = [
         "material" : "Polymeer / Metaal",
         "price" : 100,
         "bids" : 1,
-        "end_date" : "",
+        "end_date" : ""
     },
     {
         "id" : 9,
@@ -88,7 +93,7 @@ module.exports = [
         "material" : "Full Metal",
         "price" : 100,
         "bids" : 1,
-        "end_date" : "",
+        "end_date" : ""
     },
     {
         "id" : 10,
@@ -98,7 +103,7 @@ module.exports = [
         "material" : "Kunststof",
         "price" : 100,
         "bids" : 1,
-        "end_date" : "",
+        "end_date" : ""
     },
     {
         "id" : 11,
@@ -108,7 +113,7 @@ module.exports = [
         "material" : "Full Metal",
         "price" : 100,
         "bids" : 1,
-        "end_date" : "",
+        "end_date" : ""
     },
     {
         "id" : 12,
@@ -118,6 +123,6 @@ module.exports = [
         "material" : "Full Metal",
         "price" : 100,
         "bids" : 1,
-        "end_date" : "",
+        "end_date" : ""
     }
 ]
