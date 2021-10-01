@@ -138,11 +138,41 @@ router.post('/:id/bids', (req,res)=>{
     //                 }
     //             }
     //         }
-    //
-    //
     //     }
     // }
 })
 
+
+
+//6. I want to delete my own bid
+router.delete('/:id/bids/', (req,res)=>{
+    const _id = parseInt(req.params.id);
+
+    // User information
+    let _user = req.body.user;
+    let _bid = req.body.bid;
+
+    let replica = auctions.find(({ id }) => id === _id );
+    let userBidExist = replica.bids.indexOf(({ user, bid }) => user === _user && bid === _bid);
+
+    // Check if replica exists, if not send status code
+    if(!replica) return res.status(StatusCodes.NOT_FOUND).send("Replica not found.");
+
+    // Check if bid exists, if not send status code
+    if(!userBidExist) return res.status(StatusCodes.NOT_FOUND).send("Bid not found.");
+
+    if (userBidExist > -1) {
+        replica.bids.splice(userBidExist, 1);
+        return res.status(StatusCodes.OK).send(replica);
+    }
+})
+
+
+//7. want to see a list with won auctions
+router.get('/won', (req,res)=>{
+
+
+
+})
 
 module.exports = router;
