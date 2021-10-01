@@ -103,30 +103,45 @@ router.get('/:id/bids', (req,res)=> {
 // Make bid
 router.post('/:id/bids', (req,res)=>{
 
-    const id = parseInt(req.params.id);
-    const {user, bid} = req.body;
-    let exists = false;
-    for (const replica of auctions) {
-        if (replica.id === id) {
-            for (const key in replica) {
-                if (key === 'bids') {
-                    for (let i = 0; i < replica[key].length; i++){
-                        // If bid exists do set exist to true
-                        if (replica[key][i].user === user && replica[key][i].bid === bid)
-                            exists = true;
-                    }
-                }
-            }
+    const _id = parseInt(req.params.id);
+    let _user = req.body.user;
+    let _bid = req.body.bid;
 
-            if (!exists) {
-                auctions[id-1].bids.push(req.body);
-                res.status(StatusCodes.OK).send(auctions[id-1]);
-            }
-            else{
-                res.status(StatusCodes.NOT_ACCEPTABLE).send("You're so poor that I envy the people who haven't met you");
-            }
-        }
+
+    let replica = auctions.find(({ id }) => id === _id ) ;
+    if(!replica) {
+        return res.status(StatusCodes.NOT_FOUND).send("Replica not found.");
+
     }
+    let higherBidExists = replica.bids.find(({ bid }) => bid >= _bid );
+    let userBidExist = replica.bids.find(({ user, bid }) => user === _user && bid === _bid);
+
+
+    if (higherBidExists || userBidExist) {
+        return res.status(StatusCodes.NOT_ACCEPTABLE).send("You're so poor that I envy the people who haven't met you");
+    }
+
+    replica.bids.push(req.body);
+    res.status(StatusCodes.OK).send(replica);
+
+
+    // for (const replica of auctions) {
+    //     if (replica.id === id) {
+    //         for (const key in replica) {
+    //             if (key === 'bids') {
+    //                 for (let i = 0; i < replica[key].length; i++){
+    //                     // If bid exists do set exist to true
+    //                     if (replica[key][i].user === user && replica[key][i].bid === bid)
+    //                         exists = true;
+    //                     if(replica[key][i].bid > bid)
+    //                         exists = true;
+    //                 }
+    //             }
+    //         }
+    //
+    //
+    //     }
+    // }
 })
 
 

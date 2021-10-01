@@ -54,7 +54,7 @@ Content-Type: application/json
 
 {
   "user" : "John",
-    "bid": 1000
+    "bid": 180
 }
 
 ### 6. Ik wil een uitgebracht bod kunnen verwijderen
