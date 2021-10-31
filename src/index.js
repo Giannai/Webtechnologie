@@ -1,7 +1,9 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const port = 3000;
 
+app.use(cors())
 app.use(express.json());
 
 // Routers
@@ -11,8 +13,7 @@ app.use('/auctions', require('./routes/auctions'));
 
 
 
-// Middleware
-// app.use(require('./middleware/log-time'));
+// Middleware// app.use(require('./middleware/log-time'));
 // app.use(require('./middleware/is-logged-in'));
 // app.use(require('./middleware/is-admin'));
 

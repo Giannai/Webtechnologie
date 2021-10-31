@@ -25,7 +25,7 @@ function() {
 
 ### 3.	In de lijst met veilingen wil ik kunnen zoeken
 
-GET http://localhost:3000/auctions?name=Desert
+GET http://localhost:3000/auctions/search?name=cap
 Content-Type: application/json
 
 > {%
@@ -37,7 +37,7 @@ Content-Type: application/json
 
 ### 4.	In de lijst met veilingen wil ik op drie typen attributen kunnen filteren
 
-GET http://localhost:3000/auctions/?attribute=GBB
+GET http://localhost:3000/auctions/filter?material=Full Metal
 Content-Type: application/json
 
 > {%
